@@ -1,0 +1,45 @@
+{
+  "schema": "http://json-schema.org/schema",
+  "$id": "ng-add",
+  "title": "ng-add",
+  "type": "object",
+  "description": "ng-add",
+  "properties": {
+    "project": {
+      "description": "The name of the project.",
+      "type": "string",
+      "default": ""
+    },
+    "skipComponentInlineTemplate": {
+      "description": "set inlineTemplate to true to angular.json",
+      "type": "boolean",
+      "default": false
+    },
+    "skipComponentInlineStyle": {
+      "description": "set inlineStyle to true to angular.json",
+      "type": "boolean",
+      "default": false
+    },
+    "skipComponentStandalone": {
+      "description": "set component standalone to true to angular.json",
+      "type": "boolean",
+      "default": false
+    },
+    "skipComponentFlat": {
+      "description": "set flat to true to angular.json",
+      "type": "boolean",
+      "default": false
+    },
+    "skipDirectiveStandalone": {
+      "description": "set directive standalone to true to angular.json",
+      "type": "boolean",
+      "default": false
+    },
+    "skipPipeStandalone": {
+      "description": "set pipe standalone to true to angular.json",
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": []
+}

@@ -1,0 +1,43 @@
+{
+  "name": "ngx-convert-to-standalone",
+  "description": "Convert a new Angular project to standalone settings",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "ng-add": "npm run build && schematics .:ng-add",
+    "push": "npm run build && npm publish",
+    "test": "npm run build && jasmine src/**/*_spec.js"
+  },
+  "keywords": [
+    "Angular",
+    "Angular 15",
+    "Standalone Components"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wellwind/ngx-convert-to-standalone"
+  },
+  "author": {
+    "name": "Mike Huang",
+    "email": "wellwind@gmail.com",
+    "url": "https://fullstackladder.dev/"
+  },
+  "bugs": {
+    "url": "https://github.com/wellwind/ngx-convert-to-standalone/issues"
+  },
+  "license": "MIT",
+  "ng-add": {
+    "save": false
+  },
+  "schematics": "./src/collection.json",
+  "dependencies": {
+    "@angular-devkit/core": "^15.2.6",
+    "@angular-devkit/schematics": "^15.2.6",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^4.3.1",
+    "@types/node": "^18.15.11",
+    "jasmine": "^4.6.0"
+  }
+}
